@@ -238,6 +238,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ for the Frontend Challenge: Office Edition**
 
-[🔗 Live Demo](https://your-deployment-url.vercel.app) | [📧 Contact](mailto:your-email@example.com) | [🐙 GitHub](https://github.com/yourusername)
+[🔗 Live Demo](https://your-deployment-url.vercel.app) | [🐙 GitHub](https://github.com/vinobc)
 
 </div>
