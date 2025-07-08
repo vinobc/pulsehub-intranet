@@ -5,7 +5,7 @@
 
 ## 🌟 Live Demo
 
-🔗 **[View Live Demo](https://your-deployment-url.vercel.app)**  
+🔗 **[View Live Demo](https://pulsehub-intranet.vercel.app/)**  
 📱 **PWA**: Install directly to your device for the full experience!
 
 ## 📖 Overview
@@ -238,6 +238,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ for the Frontend Challenge: Office Edition**
 
-[🔗 Live Demo](https://your-deployment-url.vercel.app) | [🐙 GitHub](https://github.com/vinobc)
+[🔗 Live Demo](https://pulsehub-intranet.vercel.app/) | [🐙 GitHub](https://github.com/vinobc)
 
 </div>
