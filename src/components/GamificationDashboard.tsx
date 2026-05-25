@@ -11,29 +11,32 @@ export function GamificationDashboard() {
   ]
 
   return (
-    <div className="space-y-6">
-      <div className="border-b border-gray-200 dark:border-gray-700">
-        <nav className="flex space-x-8">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id as 'achievements' | 'leaderboard')}
-              className={`py-2 px-1 border-b-2 font-medium text-sm transition-colors ${
-                activeTab === tab.id
-                  ? 'border-blue-500 text-blue-600 dark:text-blue-400'
-                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300'
-              }`}
-            >
-              <span className="flex items-center space-x-2">
-                <span>{tab.icon}</span>
-                <span>{tab.label}</span>
-              </span>
-            </button>
-          ))}
-        </nav>
+    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-md border border-gray-100 dark:border-gray-700 p-6 transition-colors">
+      <div className="flex items-center gap-2.5 mb-5">
+        <div className="w-9 h-9 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center text-lg">
+          🎮
+        </div>
+        <h3 className="text-base font-semibold text-gray-900 dark:text-white tracking-tight">Gamification</h3>
       </div>
 
-      <div className="mt-6">
+      <div className="flex gap-1 p-1 bg-gray-100 dark:bg-gray-700/50 rounded-xl mb-6 w-fit">
+        {tabs.map((tab) => (
+          <button
+            key={tab.id}
+            onClick={() => setActiveTab(tab.id as 'achievements' | 'leaderboard')}
+            className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+              activeTab === tab.id
+                ? 'bg-white dark:bg-gray-600 text-gray-900 dark:text-white shadow-sm'
+                : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+            }`}
+          >
+            <span>{tab.icon}</span>
+            <span>{tab.label}</span>
+          </button>
+        ))}
+      </div>
+
+      <div>
         {activeTab === 'achievements' && <Achievements />}
         {activeTab === 'leaderboard' && <Leaderboard />}
       </div>
