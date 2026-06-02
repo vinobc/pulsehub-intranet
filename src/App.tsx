@@ -8,6 +8,7 @@ import { Dashboard } from './components/Dashboard'
 import { PWAInstallPrompt } from './components/PWAInstallPrompt'
 import { GamificationDashboard } from './components/GamificationDashboard'
 import { SmartSearch } from './components/SmartSearch'
+import { TeamPulse } from './components/TeamPulse'
 import './App.css'
 
 function App() {
@@ -92,6 +93,10 @@ function App() {
           </div>
 
           <Dashboard />
+
+          <div className="mt-8">
+            <TeamPulse />
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
             <ActivityFeed />
